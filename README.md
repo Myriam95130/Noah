@@ -96,12 +96,10 @@ def distance_phonemes(p1, p2):
 ### Tests validés
 
 ```
-distance_phonemes('/b/', '/p/') → 1  (juste le voisement) ✓
-distance_phonemes('/b/', '/m/') → 1  (juste le nasal) ✓
-distance_phonemes('/b/', '/s/') → 4  (voisement, labial, coronal, continu) ✓
+distance_phonemes('/b/', '/p/') --> 1  (juste le voisement) OK
+distance_phonemes('/b/', '/m/') --> 1  (juste le nasal) OK
+distance_phonemes('/b/', '/s/') --> 4  (voisement, labial, coronal, continu) OK
 ```
-
----
 
 ## Étape 4 : Les fonctions de distance entre racines
 
@@ -124,7 +122,7 @@ def dst_racines_hst(r_arabe, r_hebreu):
         phonemes_hbw.append(hébreu_biblique[lettre_hbw])
     for p_ar, p_hbw in zip(phonemes_ar, phonemes_hbw):
         distance_historique += distance_phonemes(p_ar, p_hbw)
-    return distance_historique / (len(r_arabe) * 9)   # normalisé entre 0 et 1
+    return distance_historique // (len(r_arabe)    # normalisé entre 0 et 1
 
 def dst_racines_sync(r_arabe, r_hebreu):
     """Distance synchronique — phonèmes actuels."""
@@ -136,7 +134,7 @@ def dst_racines_sync(r_arabe, r_hebreu):
         phonemes_hbw.append(hébreu_moderne[lettre_hbw])
     for p_ar, p_hbw in zip(phonemes_ar, phonemes_hbw):
         distance_synchronique += distance_phonemes(p_ar, p_hbw)
-    return distance_synchronique / (len(r_arabe) * 9)
+    return distance_synchronique // len(r_arabe)
 ```
 
 ### Problème rencontré : tuple mal encodé pour `ق`
