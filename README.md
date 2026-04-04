@@ -74,5 +74,5 @@ voisement). Deux sons identiques = distance 0.
 - [ ] Extension à d'autres langues sémitiques (amharique, araméen, maltais)
 - [ ] Interface web interactive
 
-## Auteure
+## Créateur
 *Myriam Ben Hadj Sghaier — M1 TAL, INALCO / Sorbonne Nouvelle / Paris Nanterre (2025/2026)*
