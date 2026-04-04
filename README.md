@@ -75,7 +75,7 @@ voisement). Deux sons identiques = distance 0.
 
 - [ ] Calcul de distance de Levenshtein phonologique sur les racines
 - [ ] Visualisation des correspondances sous forme de graphe
-- [ ] Extension à d'autres langues sémitiques (amharique, araméen, maltais)
+- [ ] Extension à d'autres langues sémitiques (amharique, assyrien, araméen, maltais, arabe chypriote)
 - [ ] Interface web interactive
 
 ## Créateur
