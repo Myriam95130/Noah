@@ -46,14 +46,6 @@ divergences de façon computationnelle.
 | و | ו | /w/ | /v/ | — |
 
 
-## Structure du projet
-
-Noah/
-├── comparateur.py      # Dictionnaires phonologiques + calcul de distance
-├── lexique.tsv         # Paires arabe/hébreu annotées
-└── README.md
-
----
 
 ## Concepts linguistiques clés
 
